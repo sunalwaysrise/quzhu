@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>title</title>
+<meta name="description" content="" />
+<meta name="author" content="luwenbin@live.com" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=yes" name="format-detection" />
+<link type="text/css" rel="stylesheet" href="res/css/css.css"/>
+</head>
+<body>
+<div id="quZhuIndex">
+	<div id="quzhuIndex2">
+		<header class="header header1">
+			<time id="curTime"></time>
+			<a class="hl" id="setBtn"><i class="icon1"></i><span>设置</span></a>
+			<h1></h1>
+			<a class="hr" id="MyOrder"><i class="icon2"></i><span>我的订单</span></a>
+		</header>
+		<div class="mainSection indexMain" id="list"></div>
+		<div class="fixed fixedI"><a href="set.html">设置我的行程</a></div>
+	</div>
+</div>
+<div id="closeSet"></div>
+<div id="IndexsetArea">
+	<div class="setAreaTop">设置</div>
+	<div class="setAreaMain">
+		<h4 id="myName"><a></a><p onclick="quzhu.user.editMoreBox()"><i></i>更多</p></h4>
+		<h4>积分<a id="myScore"></a><p onclick="quzhu.user.signOut()">退出</p></h4>
+		<h5></h5>
+		<h4>帮助</h4>
+		<h5></h5>
+		<h3>用户协议</h3>
+		<h4>隐私策略</h4>
+		<h5></h5>
+		<h3>意见反馈</h3>
+		<h4>联系我们<p><a href="tel:4008002200">400-800-2200</a></p></h4>
+	</div>
+	<div class="setAreaBottom">关于我们</div>
+</div>
+<div id="loading">正在加载...</div>
+<script src="res/js/jquery.min.js"></script>
+<script src="res/js/base.js"></script>
+<script src="res/js/ui.js"></script>
+<script src="res/js/user.js"></script>
+<script src="res/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>title</title>
+<meta name="description" content="" />
+<meta name="author" content="luwenbin@live.com" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<link type="text/css" rel="stylesheet" href="res/css/css.css"/>
+</head>
+<body>
+<header class="header header1" id="header">
+	<time id="curTime"></time>
+	<a class="hl" id="back1" href="search.html"><i class="icon1"></i></a>
+	<h2 id="h2">全部公寓</h2>
+	<h3 id="h3">宁波市，浙江省，中国</h3>
+	
+</header>
+<div class="mainSection TCenter">
+	<div id="listNav" class="listNav"><a id="sort">排序</a><a href="search.html">查找</a></div>
+	<ul id="hotelList" class="list2"></ul>
+	<div id="allHotelsNum" class="fixed">当前城市共有<span id="allHotelsNums"></span>个资源</div>
+	<div id="bg"></div>
+	<div id="sorts">
+		<div class="sorts" id="sorts2">
+			<b>请选择排序条件</b>
+			<a data="price_asc">价格 由低至高</a>
+			<a data="price_desc">价格 由高至低</a>
+			<a data="distance_asc">距离 由近至远</a>
+			<a data="distance_desc">距离 由远至近</a>
+		</div>
+		<a id="cancelSort">取消</a>
+	</div>
+</div>
+<script src="res/js/jquery.min.js"></script>
+<script src="res/js/base.js"></script>
+<script src="res/js/util.js"></script>
+<script src="res/js/ui.js"></script>
+<script src="res/js/user.js"></script>
+<script src="res/js/list.js"></script>
+</body>
+</html>

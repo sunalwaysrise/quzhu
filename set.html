@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>title</title>
+<meta name="description" content="" />
+<meta name="author" content="luwenbin@live.com" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<link type="text/css" rel="stylesheet" href="res/css/css.css"/>
+</head>
+<body>
+<header class="header header1" id="header">
+	<time id="curTime"></time>
+	<a class="hl" id="back1" href="index.html"><i class="icon1"></i></a>
+	<a class="hl" id="back2"><i class="icon7"></i></a>
+	<a class="hr" id="checkTime">确定</a>
+	<h2 id="h2">设置我的行程</h2>
+	<h3 id="h3">选择目的地城市及时间</h3>
+	<div id="weekNav"><b>日</b><b>一</b><b>二</b><b>三</b><b>四</b><b>五</b><b>六</b></div>
+</header>
+<div class="mainSection TCenter">
+	<!--div class="banner">
+		<h2></h2>
+	</div-->
+	<div class="setCity" id="setCity" data="选择城市">
+		<span>目的地</span>
+		<p>宁波市，浙江省，中国</p>
+		<i class="icon3"></i>
+	</div>
+	<div class="setTimes">
+		<div class="setTime setTime1" data="入住时间" data2="1">
+			<b>入住</b>
+			<div id="setBeginTime" class="setBeginTime"><b></b><a></a><span></span></div>	
+		</div>
+		<div class="setTime setTime2" data="退房时间" data2="2">
+			<b>退房</b>
+			<div id="setEndTime" class="setEndTime"><b></b><a></a><span></span></div>
+		</div>
+		<div class="totalTime">
+			<i id="totalTime"></i><span>晚</span>
+		</div>
+	</div>
+	<a class="find" id="find">好了，开始查找公寓信息<i class="icon4"></i></a>
+	<div id="setCitys">
+		<ul class="list2">
+			<li class="mb20"><img src=""><span>宁波</span><p>NingBo</p><i class="icon5"></i></li>
+			<li><img src=""><span></span><p></p><i class="icon8">即将开放</i></li>
+			<li><img src=""><span></span><p></p><i class="icon8">即将开放</i></li>
+			<li><img src=""><span></span><p></p><i class="icon8">即将开放</i></li>
+			<li><img src=""><span></span><p></p><i class="icon8">即将开放</i></li>
+			<li><img src=""><span></span><p></p><i class="icon8">即将开放</i></li>
+		</ul>
+	</div>
+	<div id="setTimes">
+		<div id="month"></div>
+		<ul id="monthList"></ul>
+		<div id="dayList"></div>
+	</div>
+</div>
+<script src="res/js/jquery.min.js"></script>
+<script src="res/js/base.js"></script>
+<script src="res/js/util.js"></script>
+<script src="res/js/ui.js"></script>
+<script src="res/js/user.js"></script>
+<script src="res/js/set.js"></script>
+</body>
+</html>

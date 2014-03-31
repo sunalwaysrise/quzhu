@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>title</title>
+<meta name="description" content="" />
+<meta name="author" content="luwenbin@live.com" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<link type="text/css" rel="stylesheet" href="res/css/css.css"/>
+</head>
+<body>
+<header class="header header2" id="header">
+	<time id="curTime"></time>
+	<a class="hl" id="back1" href="index.html"><i class="icon7"></i></a>
+	<h2 id="h2">查找</h2>
+	<h3 id="h3">共查到</h3>
+	<a class="hr" id="search">确认</a>
+</header>
+<div class="mainSection TCenter">
+	<div class="inputArea">
+		<i></i><input type="text" id="input" placeholder="您可以直接输入公寓的名称进行精准查找"/><a id="clear"></a>
+	</div>
+	<h5><b>价格</b><span>左右拖拽选择价格区间</span></h5>
+	<div class="setPrice">
+		<span id="priceShow">￥124</span>
+		<div id="setPrice"><div id="setPriceIn"></div></div>
+		<div id="priceBtn" draggable="true" ontouchstart="quzhu.ui.touch.touchStart(event)" ontouchmove="quzhu.ui.touch.touchMove2(event);" ontouchend="quzhu.ui.touch.touchEnd2();"></div>
+		<a class="price price1">￥124</a>
+		<a class="price price2">￥880</a>
+	</div>
+	<h5><b>区域</b><span>选择公寓所在地区</span></h5>
+	<div class="setArea" id="setArea">
+		<div class="setAreaAll"><a class="on">不限</a></div>
+		<a>海曙区</a>
+		<a>江东区</a>
+		<a>江北区</a>
+		<a>鄞州区</a>
+		<a>高新区</a>
+		<a>北仑区</a>
+		<a>镇海区</a>
+	</div>
+</div>
+<script src="res/js/jquery.min.js"></script>
+<script src="res/js/base.js"></script>
+<script src="res/js/util.js"></script>
+<script src="res/js/ui.js"></script>
+<script src="res/js/user.js"></script>
+<script src="res/js/search.js"></script>
+</body>
+</html>

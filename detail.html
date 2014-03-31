@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>title</title>
+<meta name="description" content="" />
+<meta name="author" content="luwenbin@live.com" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<link type="text/css" rel="stylesheet" href="res/css/css.css"/>
+</head>
+<body>
+<header class="header header1" id="header">
+	<time id="curTime"></time>
+	<a class="hl" id="headerback1"><i class="icon1"></i></a>
+	<a class="hl" id="headerback2"><i class="icon7"></i></a>
+	<a class="hl" id="headerback3"><i class="icon1"></i></a>
+	<a class="hl" id="headerback4" onclick="quzhu.setMap.hideMapBox();"><i class="icon1"></i></a>
+	<h2 id="h2">公寓详情</h2>
+	<h3 id="h3">宁波市，浙江省，中国</h3>
+	<a class="hr" id="mapBtn" onclick="quzhu.setMap.showMapBox();">地图</a>
+	<div id="setTimeHeader">
+		<a class="hl" id="backK2"><i class="icon7"></i></a>
+		<a class="hr" id="checkTime2">确定</a>
+	</div>
+	<div id="weekNav"><b>日</b><b>一</b><b>二</b><b>三</b><b>四</b><b>五</b><b>六</b></div>
+</header>
+<div class="mainSection">
+	<div id="detailBox">
+	<div class="list1">
+		<div id="d1" class="list1Contents"  ontouchstart="quzhu.ui.touch.touchStart(event)" ontouchmove="quzhu.ui.touch.touchMove(event);" ontouchend="quzhu.ui.touch.touchEnd('L1');">
+		</div>
+	</div>
+	<div class="rankTypes">
+		<div>
+			<p class="rankTypeP1"><a>日</a>租</p>
+			<p class="rankTypeP2"><sup>￥</sup><span id="pp0"></span></p>
+			<p class="rankTypeP3">每天</p>
+		</div>
+		<div>
+			<p class="rankTypeP1"><a>周</a>租</p>
+			<p class="rankTypeP2"><sup>￥</sup><span id="pp1"></span></p>
+			<p class="rankTypeP3">每天</p>
+		</div>
+		<div>
+			<p class="rankTypeP1"><a>月</a>租</p>
+			<p class="rankTypeP2"><sup>￥</sup><span id="pp2"></span></p>
+			<p class="rankTypeP3">每天</p>
+		</div>
+	</div>
+	<div class="mapIn">
+		<div id="mapIn"></div>
+		<h2 id="d3"></h2>
+		<p id="d4"></p>
+		<a href="#" class="mapInA1"></a>
+		<a href="#"></a>
+	</div>
+	<div class="intro">
+		<h2>公寓概况</h2>
+		<article id="d2"></article>
+	</div>
+	<div class="bottomFixed" id="bottomFixed"><a id="viewRoom">查看整套房型</a><a id="booking">预订<i class="icon4"></i></a></div>
+	</div>
+	<ul id="roomDetail" class="list3"></ul>
+	<div id="orderDetail"></div>
+	<div id="setTimesBGo">
+		<div class="setTimes">
+			<div class="setTime setTime1" data="入住时间" data2="1">
+				<b>入住</b>
+				<div id="setBeginTime" class="setBeginTime"><b></b><a></a><span></span></div>	
+			</div>
+			<div class="setTime setTime2" data="退房时间" data2="2">
+				<b>退房</b>
+				<div id="setEndTime" class="setEndTime"><b></b><a></a><span></span></div>
+			</div>
+			<div class="totalTime">
+				<i id="totalTime"></i><span>晚</span>
+			</div>
+			<a class="find" id="okTime">确定</a>
+		</div>
+	</div>
+	<div id="setTimes">
+		<div id="month"></div>
+		<ul id="monthList"></ul>
+		<div id="dayList"></div>
+	</div>
+</div>
+<div id="mapArea"></div>
+<script src="res/js/jquery.min.js"></script>
+<script src="res/js/base.js"></script>
+<script src="res/js/util.js"></script>
+<script src="res/js/ui.js"></script>
+<script src="res/js/user.js"></script>
+<script src="res/js/detail.js"></script>
+<script src="http://webapi.amap.com/maps?v=1.2&key=a1d8fc3ad0b21f520169cd69116ac104" type="text/javascript"></script>
+<script>
+var iniD=new Date(),iniD2=new Date(iniD.getTime()+1000*60*60*24),m={};
+quzhu.title.beginTime=iniD.getFullYear()+"-"+(iniD.getMonth()+1)+"-"+iniD.getDate();
+quzhu.title.endTime=iniD2.getFullYear()+"-"+(iniD2.getMonth()+1)+"-"+iniD2.getDate();
+m.m1=quzhu.util.setMonth(iniD.getMonth()+1);
+m.d1=iniD.getDate()<10?"0"+iniD.getDate():iniD.getDate();
+m.w1=quzhu.util.setWeek(iniD.getDay());
+m.m2=quzhu.util.setMonth(iniD2.getMonth()+1);
+m.d2=iniD2.getDate()<10?"0"+iniD2.getDate():iniD2.getDate();
+m.w2=quzhu.util.setWeek(iniD2.getDay());
+selectDom.setBeginTime.html('<b>'+m.m1+'</b><a data="'+(iniD.getMonth()+1)+'">'+m.d1+'</a><span>'+m.w1+'</span>');
+selectDom.setEndTime.html('<b>'+m.m2+'</b><a data="'+(iniD2.getMonth()+1)+'">'+m.d2+'</a><span>'+m.w2+'</span>');
+quzhu.title.sumDay();
+localStorage.setItem('timeLive',quzhu.title.beginTime);
+localStorage.setItem('days',1);
+
+</script>
+</body>
+</html>
