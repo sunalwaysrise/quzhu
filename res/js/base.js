@@ -153,6 +153,20 @@ $("#backToDetail").click(function(){
 	$("#map").removeClass("on");
 });
 curPic=$("#curPic");
+
+	document.addEventListener("deviceready", onDeviceReady, false);  
+    // PhoneGap加载完毕  
+    function onDeviceReady() {
+        navigator.geolocation.getCurrentPosition(onSuccess, onError);  
+    }
+
+function onSuccess(position) {  
+	window.localStorage.setItem('latitude', position.coords.latitude );
+		window.localStorage.setItem('longitude', position.coords.longitude );
+} 
+function onError(error) {} 
+
+/*
 if (navigator.geolocation){
 	navigator.geolocation.getCurrentPosition(function(position){
 		window.localStorage.setItem('latitude', position.coords.latitude );
@@ -165,3 +179,4 @@ if (navigator.geolocation){
 	window.localStorage.setItem('latitude', '29.8683356932' );
 	window.localStorage.setItem('longitude', '121.5449237823' );
 }
+*/
