@@ -153,7 +153,16 @@ $("#backToDetail").click(function(){
 	$("#map").removeClass("on");
 });
 curPic=$("#curPic");
-
+document.addEventListener("deviceready", onDeviceReady, false);  
+// PhoneGap加载完毕  
+function onDeviceReady(){
+	navigator.geolocation.getCurrentPosition(onSuccess, onError);
+}
+function onSuccess(position){
+	window.localStorage.setItem('latitude', position.coords.latitude );
+	window.localStorage.setItem('longitude', position.coords.longitude );
+} 
+function onError(error){}
 
 /*
 if (navigator.geolocation){
