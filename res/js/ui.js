@@ -59,8 +59,8 @@ quzhu.ui={
 		slidePart.animate({left: 0});
 	}
 };
-quzhu.ui.time();
-setInterval('quzhu.ui.time()',500);
+//quzhu.ui.time();
+//setInterval('quzhu.ui.time()',500);
 quzhu.ui.touch={
 	tX:[],
 	//tY:[],
