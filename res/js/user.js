@@ -18,6 +18,21 @@ var countDown={
 quzhu.user={
 	set:function(){
 		$("#IndexsetArea").show();
+		$("#myName").show();
+		$("#myName2").show();
+		$("#unlogin").hide();
+		$("#unlogin2").hide();
+		$("#closeSet").show();
+		$("#curTime").addClass("setTop");
+		$("#quzhuIndex2").css({"width":1024});
+		$("#quZhuIndex").addClass('quZhuIndexOn');
+	},
+	set2:function(){
+		$("#IndexsetArea").show();
+		$("#myName").hide();
+		$("#myName2").hide();
+		$("#unlogin").show();
+		$("#unlogin2").show();
 		$("#closeSet").show();
 		$("#curTime").addClass("setTop");
 		$("#quzhuIndex2").css({"width":1024});
@@ -58,7 +73,7 @@ quzhu.user={
 					localStorage.setItem('score',data.user.score);
 					fn();
 				}else{
-					quzhu.user.signInBox();
+					quzhu.user.set2();
 				}
 			}
 		});

@@ -5,7 +5,7 @@ address,caption,cite,code,dfn,em,th,del,ins,mark,sup,sub,var{font-style:normal;f
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}
 ul,ol{padding-left:0;list-style-type:none;}
 input,select{vertical-align:middle;user-select:auto;}
-input{word-break:normal;-webkit-appearance:none;-webkit-border-radius:0;}
+input{word-break:normal;-webkit-appearance:none;-webkit-border-radius:0;padding:0em;}
 a{outline:0;text-decoration:none;}
 strong{font-weight:700;}
 em{font-style:italic;}
@@ -186,7 +186,7 @@ width:100%;height:50px;position:fixed;left:0;bottom:0;
 #DBox h2{height:40px;width:100%;text-align:center;line-height:40px;font-size:16px;float:left;}
 .closeDialog{width:20px;height:20px;background:url(../images/close.png);background-size:contain;border-radius:10px;position:absolute;left:10px;top:10px;}
 #DBoxC .h2{height:40px;width:100%;text-align:center;line-height:40px;font-size:16px;float:left;}
-.input0{width:268px;height:36px;border:1px #E8E8E8 solid;float:left;font-size:18px;}
+.input0{width:266px;height:36px;border:1px #E8E8E8 solid;float:left;font-size:18px;}
 .input1{border-radius:5px 5px 0 0;}
 .input2{border-radius:0 0 5px 5px;border-top:none;}
 .input3{border-radius:5px;width:188px;}
@@ -254,6 +254,7 @@ a.gery{border-color:#333F4F;}
 .setAreaMain{padding-bottom:117px;background:#313d4c;}
 .setAreaMain h3,.setAreaMain h4,.setAreaMain h5{border-bottom:1px rgb(37,49,64) solid;background:#313d4c;}
 .setAreaMain h3,.setAreaMain h4{background:url(../images/icon10.png) right top no-repeat;background-size:contain;}
+.setAreaMain h4#unlogin{background:none;}
 .setAreaMain h3{height:39px;line-height:39px;padding-left:15px;}
 .setAreaMain p i{width:10px;height:10px;border-radius:5px;background:#f16149;display:inline-block;margin-right:10px;line-height:10px;}
 .setAreaMain h3 p,.setAreaMain h4 p{float:right;padding-right:35px;}
