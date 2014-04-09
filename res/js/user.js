@@ -109,6 +109,9 @@ quzhu.user={
 						localStorage.setItem('mobile',data.user.mobile);
 						localStorage.setItem('score',data.user.score);
 					}catch(e){}
+					
+					quzhu.user.closeSet();
+					
 					setTimeout('quzhu.dialog.close()',1000);
 				}else{
 					quzhu.ui.alert(data.errorMsg);
@@ -277,7 +280,7 @@ quzhu.dialog={
     	this.locked=true;
     	this.lock();
     	this.setPosition($("#DBox"));
-    	$(window).resize(function(){
+    	$(window).on("orientationchange",function(){
     		if(quzhu.dialog.locked){
     			quzhu.dialog.setPosition($("#DBox"));
     		}
