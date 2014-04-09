@@ -264,7 +264,7 @@ quzhu.dialog={
 		var t = document.documentElement.scrollTop || document.body.scrollTop,
 			viewHeight = $(window).height(), viewWidth = $(window).width(), _objHeight = _obj.height(), _objWidth = _obj.width(),
 			dialogTop = (viewHeight / 2) - (_objHeight / 2) + t,
-			dialogLeft = (viewWidth / 2) - (_objWidth / 2);
+			dialogLeft = (viewWidth  - _objWidth) / 2-10;
 		_obj.css({top : dialogTop,left : dialogLeft});
 	},
 	open:function(o,css){

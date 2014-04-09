@@ -254,7 +254,7 @@ a.gery{border-color:#333F4F;}
 .setAreaMain{padding-bottom:117px;background:#313d4c;}
 .setAreaMain h3,.setAreaMain h4,.setAreaMain h5{border-bottom:1px rgb(37,49,64) solid;background:#313d4c;}
 .setAreaMain h3,.setAreaMain h4{background:url(../images/icon10.png) right top no-repeat;background-size:contain;}
-.setAreaMain h4#unlogin{background:none;}
+.setAreaMain h4#unlogin{background:none;font-size:14px;font-weight:normal;}
 .setAreaMain h3{height:39px;line-height:39px;padding-left:15px;}
 .setAreaMain p i{width:10px;height:10px;border-radius:5px;background:#f16149;display:inline-block;margin-right:10px;line-height:10px;}
 .setAreaMain h3 p,.setAreaMain h4 p{float:right;padding-right:35px;}
