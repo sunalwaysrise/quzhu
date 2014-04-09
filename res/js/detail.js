@@ -72,7 +72,7 @@ $.ajax({
 			}
 			html.push('<div class="Center"><div id="theTimes" class="theTimes"><p id="theTimes2">入住'+m+'月'+d+'日-退房'+(d3.getMonth()+1)+'月'+d3.getDate()+'日</p><span>点击调整</span></div>');
 			html.push('<div id="myRoom"></div>');
-			html.push('<div class="line9"><span>联系人姓名：</span><input value="'+_name+'" id="name" class="input9" type="text" /><a onclick="quzhu.Contact.get();">添加</a></div>');
+			html.push('<div class="line9"><span>联系人姓名：</span><input value="'+_name+'" id="name" class="input9" type="text" /></div>');
 			html.push('<div class="line9"><span>手机号码：</span><input value="'+_mobile+'" id="mobile" class="input9" type="number"/></div><div class="bankPm40"></div></div>');
 			html.push('<a class="find" id="checkOut">确定订单信息无误<i class="icon4"></i></a>');
 			html.push('</div>');
@@ -171,6 +171,7 @@ $.ajax({
 		var data=eval("("+data+")");
 		if(data.errorCode==200){
 			var roomList=data.roomList,i=0,len=roomList.length,html=[];
+			if(len==0){return false;}
 			$("#pp0").html(roomList[0].price);
 			$("#pp1").html(roomList[0].price1);
 			$("#pp2").html(roomList[0].price2);

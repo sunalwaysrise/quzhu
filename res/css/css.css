@@ -233,7 +233,7 @@ a.gery{border-color:#333F4F;}
 #myRoom p em{float:right;line-height:45px;font-style:normal;}
 .line9{height:50px;line-height:50px;width:305px;margin-left:15px;border-bottom:1px #C7C7C7 solid;float:left;}
 .line9 span{float:left;}
-.line9 input{border:none;border:0;height:40px;line-height:40px;margin-top:2px;font-size:18px;float:left}
+.line9 input{border:none;border:0;height:45px;line-height:45px;margin-top:5px;font-size:18px;float:left}
 .list3 li .room{width:100%;height:320px;overflow:hidden;display:none;}
 .room{}
 #checkOut{margin:auto;left: 0;right: 0;bottom:0px;width:100%;position:fixed;}
