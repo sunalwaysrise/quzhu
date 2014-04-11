@@ -138,7 +138,7 @@ width:100%;height:50px;position:fixed;left:0;bottom:0;
 #priceShow{position:absolute;height:40px;line-height:40px;width:50px;text-align:center;font-size:18px;color:#4C80CE;left:-25px;}
 #setPrice{height:3px;width:250px;background:#F0F0F0;border-radius:1px;top:50px;position:relative;}
 #setPriceIn{background:#333F4F;height:3px;float:left;border-radius:1px;}
-#priceBtn{width:44px;height:48px;position:absolute;left:-20px;background:url(../images/priceBtn2.png);background-size:contain;top:20px;}
+#priceBtn{width:44px;height:48px;position:absolute;left:-20px;background:url(../images/priceBtn2.png);background-size:contain;top:28px;}
 .setPrice .price{position:absolute;bottom:0;height:30px;}
 .setPrice .price.price1{left:-20px;}
 .setPrice .price.price2{right:-20px;}
@@ -244,7 +244,7 @@ a.gery{border-color:#333F4F;}
 .bankPm40{width:100%;float:left;height:55px;}
 .TCenter{/*width:320px!important;*/}
 .Center{width:320px;margin:0 auto;}
-.indexMain{padding-bottom:40px;}
+.indexMain{padding-bottom:50px;}
 .fixedI{background:#ddd;}
 .fixedI a{display:block;}
 #IndexsetArea{position:fixed;left:0;top:0;bottom:0;right:35px;background:#313d4c;z-index:9999;display:none;color:#ccc;font-size:16px;}
