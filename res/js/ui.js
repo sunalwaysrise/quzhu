@@ -59,8 +59,10 @@ quzhu.ui={
 		slidePart.animate({left: 0});
 	}
 };
-//quzhu.ui.time();
-//setInterval('quzhu.ui.time()',500);
+/* ios 隐藏 */
+quzhu.ui.time();
+setInterval('quzhu.ui.time()',500);
+/* ios 顶部时间  */
 quzhu.ui.touch={
 	tX:[],
 	//tY:[],
